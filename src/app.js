@@ -45,8 +45,10 @@ angular.module('david.playground', [])
 	  
 	  $scope.buttonClick = function() {
 		  var computer = computerChoice();
-		  var human = $scope.choice;
+		  $scope.computerChoice = computer;
 		  
+		  var human = $scope.choice;
+
 		  var result = whoWins(human, computer); 
 		  console.log(computer, human, result);
 		  

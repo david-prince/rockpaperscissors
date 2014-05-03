@@ -15,7 +15,13 @@
 		<input type="radio" ng-model="choice" value="paper">Paper<br/>
 		<input type="radio" ng-model="choice" value="scissors">Scissors<br/>
 		<p>{{choice}}</p>
-		<button class="btn" data-ng-click="buttonClick()">Done</button>
+		<button class="btn btn-primary" data-ng-click="buttonClick()">Done</button>
+	</form>
+	<form class="well">
+		<input type="radio" ng-model="computerChoice" value="rock">Rock<br/>
+		<input type="radio" ng-model="computerChoice" value="paper">Paper<br/>
+		<input type="radio" ng-model="computerChoice" value="scissors">Scissors<br/>
+		<p>{{computerChoice}}</p>
 	</form>
 </div>
 
