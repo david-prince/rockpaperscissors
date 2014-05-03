@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" ng-app="palaso.sample.typeahead" >
+<head>
+	<meta charset="utf-8">
+	<title>Typeahead Sample</title>
+	<link rel="stylesheet" href="../vendor_bower/bootstrap-css/css/bootstrap.css" />
+	<link rel="stylesheet" href="../src/css/typeahead.css" />
+</head>
+<body>
+<h3>Typeahead Sample</h3>
+<div ng-controller="TypeaheadSampleCtrl">
+<form class="well">
+<label>Can we find him?</label>
+<typeahead class="typeahead" items="users" term="typeahead.userName" search="queryUser" select="selectUser">
+	<ul>
+		<li typeahead-item="user" ng-repeat="user in users" class="typeahead-item">
+			<img width="32px" ng-src="{{imageSource(user.image)}}" class="pull-left">
+			<p class="name">{{user.name}}</p>
+			<p class="email">{{user.email}}</p>
+		</li>
+	</ul>
+</typeahead>
+<button class="btn">Some Button</button>
+</form>
+<h4>Sample Data</h4>
+The sample data is a javascript array of objects containing the following names:
+<ul>
+<li ng-repeat="thing in things">{{thing.name}}</li>
+</ul>
+Typing something like 'ob' for will show you multiple options in the typeahead.
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="../vendor_bower/angular/angular.js"></script>
+<script src="../src/typeahead.js"></script>
+<script src="typeahead-sample.js"></script>
+
+</body>
+</html>

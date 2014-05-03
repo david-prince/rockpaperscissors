@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" data-ng-app="david.playground" >
+<head>
+	<meta charset="utf-8">
+	<title>David's Playground</title>
+	<link rel="stylesheet" href="../vendor_bower/bootstrap-css/css/bootstrap.css" />
+	<link rel="stylesheet" href="css/david.css" />
+</head>
+<body>
+<h3>David's Playground #1: Rock, Paper, Scissors</h3>
+<div data-ng-controller="DavidCtrl">
+	<p>{{message}}</p>
+	<form class="well">
+		<input type="radio" ng-model="choice" value="rock">Rock<br/>
+		<input type="radio" ng-model="choice" value="paper">Paper<br/>
+		<input type="radio" ng-model="choice" value="scissors">Scissors<br/>
+		<p>{{choice}}</p>
+		<button class="btn" data-ng-click="buttonClick()">Done</button>
+	</form>
+</div>
+
+<script src="../vendor_bower/angular/angular.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

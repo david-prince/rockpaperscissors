@@ -1,0 +1,21 @@
+{
+  "name": "david",
+  "description": "David's javascript playground",
+  "main": "david.js",
+  "authors": [
+    "David"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "vendor_bower"
+  ],
+  "dependencies": {
+    "angular": "1.3.0-beta.7"
+  },
+  "devDependencies": {
+    "bootstrap-css": "~3.x"
+  }
+}
