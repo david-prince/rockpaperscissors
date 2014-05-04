@@ -53,6 +53,8 @@ angular.module('david.playground', [])
 		  console.log(computer, human, result);
 		  
 		  $scope.message = result;
+		  console.log("Hi user!");
+		  
 		  
 	  };
 	  

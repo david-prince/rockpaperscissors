@@ -10,20 +10,31 @@
 <h3>David's Playground #1: Rock, Paper, Scissors</h3>
 <div data-ng-controller="DavidCtrl">
 	<p>{{message}}</p>
+	<img src="images/bob.jpg" />
 	<form class="well">
+  <div class="form-group">
+    <label for="exampleInputPassword1"><b>You!</b></label>
+    
+  </div>
 		<input type="radio" ng-model="choice" value="rock">Rock<br/>
 		<input type="radio" ng-model="choice" value="paper">Paper<br/>
 		<input type="radio" ng-model="choice" value="scissors">Scissors<br/>
 		<p>{{choice}}</p>
-		<button class="btn btn-primary" data-ng-click="buttonClick()">Done</button>
+		<button type="button" class="btn btn-success" data-ng-click="buttonClick()">GO!!!</button>
 	</form>
-	<form class="well">
-		<input type="radio" ng-model="computerChoice" value="rock">Rock<br/>
-		<input type="radio" ng-model="computerChoice" value="paper">Paper<br/>
-		<input type="radio" ng-model="computerChoice" value="scissors">Scissors<br/>
+	<form role="form" class="well" >
+	<div class="form-group">
+    	<label for="choice"><strong>Com</strong></label>   	
+	</div>
+	<div class="form-group">
+		<input type="radio" data-ng-model="computerChoice" value="rock" />Rock<br/>
+		<input type="radio" ng-model="computerChoice" value="paper" />Paper<br/>
+		<input type="radio" ng-model="computerChoice" value="scissors" />Scissors<br/>
 		<p>{{computerChoice}}</p>
+	</div>
 	</form>
-</div>
+</div>	
+
 
 <script src="../vendor_bower/angular/angular.js"></script>
 <script src="app.js"></script>
